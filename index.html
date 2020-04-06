@@ -13,6 +13,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,20 +23,30 @@
 		<ul class="navbar-nav mr-auto">
 			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
 			<li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
+			<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
 		</ul>
 		<div class="d-none d-md-block">
 			<p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
 			<a href="/login">Sign In/Sign Up</a>
 		</div>
 	</nav>
-	<article class="container">
+	<article class="container mt-3">
 		<div class="row">
 			<div class="col-12">
-				<section class="callout">
+				<div class="alert alert-warning">
+					<strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6!
+					<a href="">See here for details!</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<section class="callout jumbotron text-center">
 					<h1>The finest whiskeys delivered to your doorstep</h1>
 					<p class="lead">Sign up today and start receiving the world’s best whiskeys every month.
-						<s>£19.99</s> <strong><mark>First one is free!</mark></strong></p>
+						<s class="d-none d-sm-inline">£19.99</s>
+						<span class="d-inline d-sm-none"><br></span>
+						<strong><mark>First one is free!</mark></strong></p>
 					<button class="btn btn-success btn-lg">Sign Up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up for our service. Please drink responsibly.</small></p>
@@ -46,38 +58,54 @@
 
 		<section class="quotes">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Quotes:</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I’ve been introduced to more than 10 great international whiskeys I never knew about!</p>
-						<p>- Jane Doe</p>
-					</blockquote>
-				</div>
-				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I haven't been sober for months!</p>
-						<p>- Jane Doe</p>
-					</blockquote>
-				</div>
-			</div>
+					<div class="media">
+						<div class="d-none d-sm-block">
+							<img src="data:image/jpeg;base64,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" class="rounded-circle mr-3" height=100 width=100>
+						</div>
+							<div class="media-body">
+								<blockquote class="blockquote">
+									<p>I’ve been introduced to more than 10 great international whiskeys I never knew
+										about!
+									</p>
+									<p>- Jane Doe</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="media">
+							<div class="d-none d-sm-block">
+								<img src="https://cdn.pixabay.com/photo/2019/07/30/16/13/guy-4373322_960_720.jpg" class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+								<div class="media-body">
+									<blockquote class="blockquote">
+										<p>I haven't been sober for months!</p>
+										<p>- Jane Doe</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
 		</section>
 
 		<hr>
 
 		<section class="features">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Features:</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3>Feature 1</h3>
+						<h3><i class="fas fa-gifts d-none d-sm-block"></i> Feature 1
+							<span class="badge badge-success">NEW!</span></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -93,7 +121,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3>Feature 2</h3>
+						<h3><i class="far fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -109,7 +137,7 @@
 				</div>
 				<div class="col-12 d-md-none d-lg-block col-lg-4">
 					<div class="feature">
-						<h3>Feature 3</h3>
+						<h3><i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris

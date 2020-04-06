@@ -3,10 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
+	<!--the line below this is a tag that we need to include in the head of our page that tells the browser how to respond to different resolutions, particularly mobile ones(bootstrap)-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" <title>Whiskey Drop | Taste a new whiskey
-	every month</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Whiskey Drop | Taste a new whiskey every month</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -15,6 +16,18 @@
 </head>
 
 <body>
+	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+		<a href="/" class="navbar-brand">Whiskey Drop</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+			<li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
+		</ul>
+		<div class="d-none d-md-block">
+			<p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+			<a href="/login">Sign In/Sign Up</a>
+		</div>
+	</nav>
 	<article class="container">
 		<div class="row">
 			<div class="col-12">
@@ -29,7 +42,7 @@
 			</div>
 		</div>
 
-        <hr>
+		<hr>
 
 		<section class="quotes">
 			<div class="row">
@@ -53,8 +66,8 @@
 			</div>
 		</section>
 
-        <hr>
-        
+		<hr>
+
 		<section class="features">
 			<div class="row">
 				<div class="col-12">
@@ -111,6 +124,35 @@
 					</div>
 				</div>
 			</div>
+		</section>
+		<section>
+			<h2 class="text-uppercase">Monthly favourites:</h2>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Origin</th>
+				</tr>
+				<tr>
+					<td>Basil Hayden's</td>
+					<td>USA</td>
+				</tr>
+				<tr>
+					<td>Tullamore Dew</td>
+					<td>Ireland</td>
+				</tr>
+				<tr>
+					<td>Ballantine's</td>
+					<td>Great Britain</td>
+				</tr>
+				<tr>
+					<td>The Tottori</td>
+					<td>Japan</td>
+				</tr>
+				<tr>
+					<td>Black Velvet</td>
+					<td>Canada</td>
+				</tr>
+			</table>
 		</section>
 
 	</article>

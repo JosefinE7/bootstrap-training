@@ -58,6 +58,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!--The reason why we put d-sm-block on div and d-sm-inline on spans is because divs are a block element where a span is not, seems obvious but good to remember.-->
+
 		<div class="row">
 			<div class="col-12">
 				<section class="callout jumbotron text-center">
@@ -105,7 +108,7 @@
 								<div class="media-body">
 									<blockquote class="blockquote">
 										<p>I haven't been sober for months!</p>
-										<p>- Jane Doe</p>
+										<p>- Frank Doe</p>
 									</blockquote>
 								</div>
 							</div>
@@ -173,35 +176,59 @@
 			</div>
 		</section>
 		<section>
-			<h2 class="text-uppercase">Monthly favourites:</h2>
-			<table>
-				<tr>
-					<th>Name</th>
-					<th>Origin</th>
-				</tr>
-				<tr>
-					<td>Basil Hayden's</td>
-					<td>USA</td>
-				</tr>
-				<tr>
-					<td>Tullamore Dew</td>
-					<td>Ireland</td>
-				</tr>
-				<tr>
-					<td>Ballantine's</td>
-					<td>Great Britain</td>
-				</tr>
-				<tr>
-					<td>The Tottori</td>
-					<td>Japan</td>
-				</tr>
-				<tr>
-					<td>Black Velvet</td>
-					<td>Canada</td>
-				</tr>
-			</table>
-		</section>
-
+			<section class="monthly favorites">
+				<div class="row">
+					<div class="col-12 my-5">
+						<h2 class="text-uppercase">monthly favorites</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Name</th>
+									<th scope="col">Origin</th>
+									<th scope="col">Cost</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Basil Hayden's</td>
+									<td>USA</td>
+									<td>00.00$</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Tullamore Dew</td>
+									<td>Ireland</td>
+									<td>00.00$</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Ballantine's</td>
+									<td>Great Britain</td>
+									<td>00.00$</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>The Tottori</td>
+									<td>Japan</td>
+									<td>00.00$</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td>Black Velvet</td>
+									<td>Canada</td>
+									<td>00.00$</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
 	</article>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">

@@ -63,17 +63,21 @@
 			</div>
 		</div>
 	</div> -->
-		<!--The reason why we put d-sm-block on div and d-sm-inline on spans is because divs are a block element where a span is not, seems obvious but good to remember.-->
-    <div class="container-fluid callout-container">
+	<!--The reason why we put d-sm-block on div and d-sm-inline on spans is because divs are a block element where a span is not, seems obvious but good to remember.-->
+	<div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
 		<div class="row">
 			<div class="col-12">
 				<section class="callout jumbotron text-center">
 					<h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep</h1>
+
+					<hr class="main-line">
+
 					<p class="lead">Sign up today and start receiving the world’s best whiskeys every month.
 						<s class="d-none d-sm-inline">£19.99</s>
 						<span class="d-inline d-sm-none"><br></span>
 						<strong><mark>First one is free!</mark></strong></p>
-					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+					<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up for our service. Please drink responsibly.</small></p>
 				</section>
@@ -131,7 +135,7 @@
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3><i class="fas fa-gifts d-none d-sm-block"></i> Feature 1
+						<h3><i class="fas fa-gifts d-none d-sm-block"></i>Feature 1
 							<span class="badge badge-success">NEW!</span></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
@@ -148,7 +152,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3><i class="far fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
+						<h3> <i class="far fa-credit-card d-none d-sm-block"></i>Feature 2</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore
 							et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
